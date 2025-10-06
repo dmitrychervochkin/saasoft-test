@@ -18,7 +18,7 @@
             <span class="header-cell">Действия</span>
         </div>
 
-        
+        <AccountItem v-for="acc in accounts" :key="acc.id" :account="acc" />
     </div>
 </template>
 
