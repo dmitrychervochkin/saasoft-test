@@ -8,7 +8,7 @@
 
 <script lang="ts" setup>
 import { useAccountsStore } from './stores/accounts';
-import  AccountForm from './components/AccountForm'
+import AccountForm from './components/AccountForm.vue';
 
 const store = useAccountsStore();
 const saved = localStorage.getItem('accounts');
