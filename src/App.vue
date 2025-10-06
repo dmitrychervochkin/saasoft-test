@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <div class="container">
+      <AccountForm />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useAccountsStore } from './stores/accounts';
+import  AccountForm from './components/AccountForm'
 
 const store = useAccountsStore();
 const saved = localStorage.getItem('accounts');
